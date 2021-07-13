@@ -1,0 +1,45 @@
+#######################################################################################
+# A default configuration that will be loaded for all jupyter books
+# See the documentation for help and more options: 
+# https://jupyterbook.org/customize/config.html
+
+#######################################################################################
+# Book settings
+title                       : An Introduction to Applied Bioinformatics
+author                      : J Gregory Caporaso 
+copyright                   : "2014-2021" 
+logo                        : logo.png 
+
+parse:
+  # defaults from https://jupyterbook.org/customize/config.html (2021-02-19)
+  myst_enable_extensions:
+    # - amsmath
+    - colon_fence
+    # - deflist
+    - dollarmath
+    # - html_admonition
+    # - html_image
+    - linkify
+    # - replacements
+    # - smartquotes
+    - substitution
+
+  myst_url_schemes          : [mailto, http, https]
+
+
+execute:
+  timeout: 240
+  execute_notebooks: force # set to cache, pending https://github.com/executablebooks/jupyter-book/issues/1239
+  run_in_temp: true
+
+repository:
+  url                       : https://github.com/applied-bioinformatics/iab2
+  path_to_book              : book
+  branch                    : main
+
+launch_buttons:
+  notebook_interface: "classic" # "jupyterlab" doesn't yet support markdown notebooks
+  binderhub_url: "https://mybinder.org"
+
+bibtex_bibfiles:
+   - references.bib
