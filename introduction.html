@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction &#8212; An Introduction to Applied Bioinformatics</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Biological Information" href="biological-information.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">An Introduction to Applied Bioinformatics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1 current">
+  <a class="reference internal" href="#">
+   Introduction
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="biological-information.html">
+   Biological Information
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pairwise-alignment.html">
+   Pairwise sequence alignment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="database-searching.html">
+   Sequence homology searching
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="machine-learning.html">
+   Machine learning in bioinformatics
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="_sources/introduction.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/introduction.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/applied-bioinformatics/iab2/main?urlpath=tree/book/introduction.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#who-should-read-iab">
+   Who should read IAB?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-read-iab">
+   How to read IAB
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conventions-used-in-this-text">
+   Conventions used in this text
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#text-formats">
+     Text formats
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#special-text-blocks">
+     Special text blocks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structure-of-this-book">
+   Structure of this book
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>Bioinformatics, as I see it, is the application of the tools of computer science (such as programming languages, algorithms, and databases) to address biological problems (for example, inferring the evolutionary relationship between a group of organisms based on fragments of their genomes, or understanding if or how the community of microorganisms that live in my gut changes if I modify my diet). Bioinformatics is a rapidly growing field, largely in response to the vast increase in the quantity of data that biologists now grapple with. Students from varied disciplines (e.g., biology, computer science, statistics, and biochemistry) and stages of their educational careers (undergraduate, graduate, or postdoctoral) are becoming interested in bioinformatics.</p>
+<p><em>An <strong>I</strong>ntroduction to <strong>A</strong>pplied <strong>B</strong>ioinformatics</em>, or <strong>IAB</strong>, is a bioinformatics text available at <a class="reference external" href="http://readIAB.org">http://readIAB.org</a>. It introduces readers to core concepts in bioinformatics in the context of their implementation and application to real-world problems and data. IAB makes extensive use of common Python libraries, such as <a class="reference external" href="https://scikit-learn.org/">scikit-learn</a> and <a class="reference external" href="http://www.scikit-bio.org">scikit-bio</a>, which provide production-ready implementations of algorithms and data structures taught in the text. Readers therefore learn the concepts in the context of tools they can use to develop their own bioinformatics software and pipelines, enabling them to rapidly get started on their own projects. While some theory is discussed, the focus of IAB is on what readers need to know to be effective, practicing bioinformaticians.</p>
+<p>My goal with IAB is to make getting started in bioinformatics as accessible as possible to students from varied backgrounds, and to get more people interested in this exciting field. I’m very interested in hearing from readers and instructors who are using IAB, so get in touch with feedback, corrections, or suggestions. The best way to get in touch is using the <a class="reference external" href="https://github.com/applied-bioinformatics/iab2/issues">IAB2 issue tracker</a>.</p>
+<div class="section" id="who-should-read-iab">
+<h2>Who should read IAB?<a class="headerlink" href="#who-should-read-iab" title="Permalink to this headline">¶</a></h2>
+<p>IAB is written for scientists, software developers, and students interested in understanding and applying bioinformatics methods, and ultimately in developing their own bioinformatics analysis pipelines or software.</p>
+<p>IAB was initially developed for an undergraduate course at <a class="reference external" href="http://www.nau.edu">Northern Arizona University</a> cross-listed in computer science and biology with no pre-requisites. It therefore assumes little background in biology or computer science, however some basic background is very helpful. For example, an understanding of the roles of and relationship between DNA and protein in a cell, and the ability to read and follow well-annotated Python 3 code, are both helpful (but not necessary) to get started.</p>
+</div>
+<div class="section" id="how-to-read-iab">
+<h2>How to read IAB<a class="headerlink" href="#how-to-read-iab" title="Permalink to this headline">¶</a></h2>
+<p>This book can be read statically or as an interactive <a class="reference external" href="https://jupyterbook.org/">Jupyter Book</a>. The simplest way to read IAB interactively is with <a class="reference external" href="https://mybinder.org/">Binder</a>. When chapters are available to read interactively, you’ll see a rocket ship icon toward the top-right of the page. The current page can be read interactively, allowing you to execute the following code block (making any modifications you choose to make). If you’d like to try it out, click the rocket ship icon, and then the Launch Binder box that pops up beneath it.</p>
+<p>Code blocks will be presented throughout the book. If you’re reading a static version of the book, the output of running the code will be presented below the code block. If you’re reading an interactive version of the book, you’ll have to run the code cell to see the output.</p>
+<p>Here’s an example Python 3 code cell that imports the scikit-bio library and prints some information to the screen.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">skbio</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">skbio</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">skbio</span><span class="o">.</span><span class="n">art</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>*                                                    *
+               _ _    _ _          _     _
+              (_) |  (_) |        | |   (_)
+      ___  ___ _| | ___| |_ ______| |__  _  ___
+     / __|/ __| | |/ / | __|______| &#39;_ \| |/ _ \
+     \__ \ (__| |   &lt;| | |_       | |_) | | (_) |
+     |___/\___|_|_|\_\_|\__|      |_.__/|_|\___/
+
+*                                                    *
+
+
+
+           Opisthokonta
+                   \  Amoebozoa
+                    \ /
+                     *    Euryarchaeota
+                      \     |_ Crenarchaeota
+                       \   *
+                        \ /
+                         *
+                        /
+                       /
+                      /
+                     *
+                    / \
+                   /   \
+        Proteobacteria  \
+                       Cyanobacteria
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="conventions-used-in-this-text">
+<h2>Conventions used in this text<a class="headerlink" href="#conventions-used-in-this-text" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="text-formats">
+<h3>Text formats<a class="headerlink" href="#text-formats" title="Permalink to this headline">¶</a></h3>
+<p>I have tried to be consistent in how I emphasize text throughout the book. <strong>Bolded text</strong> indicates new terms that are being introduced; <em>italicized text</em> is used for emphasizing important ideas; and <code class="docutils literal notranslate"><span class="pre">fixed-width</span> <span class="pre">text</span></code> is used to indicate literal values, for example names of variables that are being used in the text.</p>
+</div>
+<div class="section" id="special-text-blocks">
+<h3>Special text blocks<a class="headerlink" href="#special-text-blocks" title="Permalink to this headline">¶</a></h3>
+<p>Throughout the text, you’ll sometimes see blocks of text that stand out as follows:</p>
+<div class="tip admonition">
+<p class="admonition-title">Tip: Learn programming a little at a time</p>
+<p>Spending a few minutes coding every day is a great way to build your programming skills, empower your own research, and make you more competitive for future career opportunities. Python 3 and R are great languages to get started with for bioinformatics, but just about any language will be fine for learning.</p>
+</div>
+<p>These are intended to share ideas related to what is being presented in the text. I’ll use a few types of these special text blocks:</p>
+<ul class="simple">
+<li><p>Video: a video is available that may help you understand this content.</p></li>
+<li><p>Tip: an idea that may help you in your learning.</p></li>
+<li><p>Note: a idea that is related to the content being presented, but is a bit off topic relative to the current discussion.</p></li>
+<li><p>Warning: a common error that is encountered or mistake that is made.</p></li>
+<li><p>Food for thought: a question or topic to think about related to the current content.</p></li>
+<li><p>Exercise: a suggestion for something to experiment to help you develop your understanding of the current content.</p></li>
+<li><p>Jargon: discussed a term that is common among bioinformatics practitioners, but which may not be immediately clear to beginners.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="structure-of-this-book">
+<h2>Structure of this book<a class="headerlink" href="#structure-of-this-book" title="Permalink to this headline">¶</a></h2>
+<p>This book contains four sections that are intended to be read in order. The first section, <em>Biological Information</em>, provides a gentle introduction to information processing in biological systems and relates that to information processing in computer systems. The second section, <em>Pairwise sequence alignment</em>, introduces algorithms that are at the core of biological sequence analysis. The third section, <em>Sequence Homology Searching</em> illustrates an application of global pairwise alignment (which you will have just learned about) in annotating biological sequences taxonomically. Here you’ll work through the ideas at the core of sequence database searching, which you have used if you’ve ever done a BLAST search (for example). Finally, the fourth section, <em>Machine Learning in Bioinformatics</em>, introduces the concepts of unsupervised and supervised learning in the context of understanding biological sequences.</p>
+<p>I think that these topics provide a solid foundation in bioinformatics from which you can build - similar to what you might get from a one semester undergraduate or graduate course (and this is a great resource for such a course). There are many other topics that could be covered, such as phylogenetic reconstruction, which I may add in future editions of this text. For any given edition of IAB, starting with this second edition, you can always expect to find the content that is presented to be complete. However, like most good projects, I don’t expect that I’ll ever really be done with it. So if there are additional topics you’d like to see covered in this way, please let me know.</p>
+<p>Thanks for your interest in this text and in bioinformatics. Now grab a cup of your favorite hot beverage, and let’s get started! ☕</p>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='right-next' id="next-link" href="biological-information.html" title="next page">Biological Information</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By J Gregory Caporaso<br/>
+        
+            &copy; Copyright 2014-2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
