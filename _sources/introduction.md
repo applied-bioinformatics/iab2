@@ -59,13 +59,13 @@ Spending a few minutes coding every day is a great way to build your programming
 
 These are intended to share ideas related to what is being presented in the text. I'll use a few types of these special text blocks:
 
-- Video: a video is available that may help you understand this content. 
+- Video: a video that may help you understand this content. 
 - Tip: an idea that may help you in your learning.
 - Note: a idea that is related to the content being presented, but is a bit off topic relative to the current discussion.
 - Warning: a common error that is encountered or mistake that is made.
 - Food for thought: a question or topic to think about related to the current content.
-- Exercise: a suggestion for something to experiment to help you develop your understanding of the current content.
-- Jargon: discussed a term that is common among bioinformatics practitioners, but which may not be immediately clear to beginners. 
+- Exercise: a suggestion for something to experiment with to help you understand the current content.
+- Jargon: a term that is common among bioinformatics practitioners, but which may not be immediately clear to beginners. 
 
 ## Structure of this book
 
@@ -73,4 +73,4 @@ This book contains four sections that are intended to be read in order. The firs
 
 I think that these topics provide a solid foundation in bioinformatics from which you can build - similar to what you might get from a one semester undergraduate or graduate course (and this is a great resource for such a course). There are many other topics that could be covered, such as phylogenetic reconstruction, which I may add in future editions of this text. For any given edition of IAB, starting with this second edition, you can always expect to find the content that is presented to be complete. However, like most good projects, I don't expect that I'll ever really be done with it. So if there are additional topics you'd like to see covered in this way, please let me know. 
 
-Thanks for your interest in this text and in bioinformatics. Now grab a cup of your favorite hot beverage, and let's get started! ☕
+Thanks for your interest in this text and in bioinformatics. Grab a cup of your favorite hot beverage, and let's get started! ☕
