@@ -74,3 +74,7 @@ This book contains four sections that are intended to be read in order. The firs
 I think that these topics provide a solid foundation in bioinformatics from which you can build - similar to what you might get from a one semester undergraduate or graduate course (and this is a great resource for such a course). There are many other topics that could be covered, such as phylogenetic reconstruction, which I may add in future editions of this text. For any given edition of IAB, starting with this second edition, you can always expect to find the content that is presented to be complete. However, like most good projects, I don't expect that I'll ever really be done with it. So if there are additional topics you'd like to see covered in this way, please let me know. 
 
 Thanks for your interest in this text and in bioinformatics. Grab a cup of your favorite hot beverage, and let's get started! ☕
+
+$$
+
+$$
