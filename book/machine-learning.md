@@ -529,9 +529,9 @@ _ = sns.stripplot(x=axis1_values_b,
 
 Notice that these two plots are mirror images of each other. Because they're perfectly anti-correlated, they present identical information about the grouping of the samples. This will be true for any axis in our ordination, and for this reason the directionality of the axes in an ordination is not meaningful. You can always flip an axis and have the same result. You may also notice that if you run the same ordination multiple times, the directionality of the axes might change across runs. This is typically a result of how the algorithm is implemented, and it doesn't impact your results at all. 
 
-### Principle Coordinates Analysis (PCoA)
+### Principal Coordinates Analysis (PCoA)
 
-Finally, lets conclude our introduction to unsupervised learning by plotting these same data using principle coordinates analysis, or PCoA. As mentioned earlier, the math for PCoA is more complex than for polar ordination, but it works better than polar ordination and should be preferred in practice to polar ordination. scikit-bio includes an implementation of PCoA that can be used in practice as illustrated here.
+Finally, lets conclude our introduction to unsupervised learning by plotting these same data using principal coordinates analysis, or PCoA. As mentioned earlier, the math for PCoA is more complex than for polar ordination, but it works better than polar ordination and should be preferred in practice to polar ordination. scikit-bio includes an implementation of PCoA that can be used in practice as illustrated here.
 
 ```{code-cell} ipython3
 import skbio.stats.ordination
